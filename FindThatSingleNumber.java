@@ -1,20 +1,26 @@
 public class FindThatSingleNumber{
 
-public static int[] getThatSingleNum(int[] arrays){
+public int getThatSingleNum(int[] arrays){
 
-int[] array = {};
-for(int num = 0; num < array.length; num++){
-if(array[0] != array[1]){
+int result = 0;
+
+for(int num : arrays){
+
+result ^= num;
+
 }
-}
-return array;
+
+return result;
+
 }
 
 public static void main(String[] args){
 
-int[] num = {2, 2, 5, 7, 7};
+FindThatSingleNumber FindThatSingleNumber = new FindThatSingleNumber();
 
-System.out.print(getThatSingleNum(num));
+int[] num = {2, 2, 5, 8, 8};
+
+System.out.print(FindThatSingleNumber.getThatSingleNum(num));
 
 
   }

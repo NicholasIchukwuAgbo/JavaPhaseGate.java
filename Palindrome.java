@@ -29,7 +29,7 @@ return original == backward;
 
 public static void main(String[] args){
 
-int numbers = 2119;
+int numbers = 1111;
 
 System.out.print(isPalindrome(numbers));
 

@@ -1,26 +1,17 @@
 public class IndexOfLastWord{
 
-public static String getLastIndex(String[] letters){
+    public int getIndexOfLastWord(String letters) {
+        String[] words = letters.trim().split(" ");
+        return words[words.length - 1].length();
+    }
 
-String[] names = {};
+    public static void main(String[] args) {
 
-for(int i = 0; i < names.length; i++){
+ 	IndexOfLastWord  IndexOfLastWord = new  IndexOfLastWord();
 
-if(names 
+        String list = "Hello World";
 
+        System.out.print(IndexOfLastWord.getIndexOfLastWord(list));  
+    }
 }
-
-return names;
-
-}
-
-public static void main(String[] args){
-
-String[] list = {"hi", "hey"};
-
-System.out.print(getLastIndex(list));
-
-  }
-
-
-}
+ 
