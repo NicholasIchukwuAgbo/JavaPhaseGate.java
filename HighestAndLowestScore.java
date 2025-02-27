@@ -8,11 +8,10 @@ int[] numbers = new int[score[0].length];
 
 for(int count = 0; count < score.length; count++){
   
-   for(int counter = 0; counter < score[count].length; counter++){
+for(int counter = 0; counter < score[count].length; counter++){
 
- 	numbers[counter] += score[count][counter];
-
-  }
+numbers[counter] += score[count][counter];
+ }
   
  }
 
@@ -40,7 +39,7 @@ return new int[] {second, first};
 
 public static void main(String[] args) {
 
-int[][] arrays = {{30,40,50}, {10,20,50}};
+int[][] arrays = {{30,40,50},{10,20,50}};
 
 int[] result = scores(arrays);
 
